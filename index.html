@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>猫七</title>
+		<link rel="stylesheet" href="css/index.css" />
+	</head>
+	<body>
+		<header id="header">
+			<div id="userName">猫七先生</div>
+			<!--导航-->
+			<nav id="nav">
+				<ul>
+					<li><a href="#">首页</a></li>
+					<li>
+						<a href="#">技术博客</a>
+						<span class="nav-style top"></span>
+						<span class="nav-style bottom"></span>
+						<span class="nav-style left"></span>
+						<span class="nav-style right"></span>
+					</li>
+					<li>
+						<a href="#">关于我</a>
+						<span class="nav-style top"></span>
+						<span class="nav-style bottom"></span>
+						<span class="nav-style left"></span>
+						<span class="nav-style right"></span>
+					</li>
+					<li><a href="#">站点地图</a></li>
+				</ul>
+			</nav>
+			<!--每日一句-->
+			<div id="everyDay">
+				<script type="text/javascript" src="https://api.lwl12.com/hitokoto/main/get?encode=js&charset=utf-8"></script>
+				<p><script>lwlhitokoto()</script></p>
+			</div>
+		</header>
+		<!--文章列表-->
+		<section id="article">
+			<article class="article-item">
+				<span class="yuan"></span>
+				<span class="time">2018.03.02</span>
+				<div class="content">
+					
+				</div>
+			</article>
+		</section>
+	</body>
+</html>
