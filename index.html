@@ -41,9 +41,51 @@
 				<span class="yuan"></span>
 				<span class="time">2018.03.02</span>
 				<div class="content">
-					
+					<h1>最想说的秘密呀呀呀呀这是一个标题哈哈哈</h1>
+					<div class="imgCon">
+						<div id="imgStyle">
+							<img src="http://img1.3lian.com/2015/a1/105/d/40.jpg"/>
+						</div>
+						<p>
+							学习过程中所记录的笔记，按着步骤来可以自己搭建一个能通信的服务器，
+							遇到不懂的地方问度娘。 在 我的码云（点击查看） 和 我的github（点击查看）
+							上有搭建完成后的代码，前端用的Vue框架。 不完善的地方还在修改ing~
+						</p>
+					</div>
+				</div>
+			</article>
+			<article class="article-item">
+				<span class="yuan"></span>
+				<span class="time">2018.03.02</span>
+				<div class="content">
+					<h1>最想说的秘密呀呀呀呀这是一个标题哈哈哈</h1>
+					<div class="imgCon">
+						<div id="imgStyle">
+							<img src="http://img1.3lian.com/2015/a1/105/d/40.jpg"/>
+						</div>
+						<p>
+							学习过程中所记录的笔记，按着步骤来可以自己搭建一个能通信的服务器，
+							遇到不懂的地方问度娘。 在 我的码云（点击查看） 和 我的github（点击查看）
+							上有搭建完成后的代码，前端用的Vue框架。 不完善的地方还在修改ing~
+						</p>
+					</div>
 				</div>
 			</article>
 		</section>
 	</body>
+	<script type="text/javascript">
+		window.onload=function(){
+			var timeList=document.getElementsByClassName('time');
+			for(var a=0;a<timeList.length;a++){
+				(function(i){
+					timeList[i].addEventListener('mouseenter',function(){
+						timeList[i].previousElementSibling.className='yuanHover';
+					});
+					timeList[i].addEventListener('mouseleave',function(){
+						timeList[i].previousElementSibling.className='yuan';
+					});
+				})(a)
+			}	
+		}
+	</script>
 </html>
