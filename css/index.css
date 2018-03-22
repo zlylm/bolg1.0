@@ -242,13 +242,13 @@
 	border-left:solid #F1F0EE 2px;
 	padding: 20px 0 40px 46px;
 }
-.article-item .content h1{
+.article-item .content h1 a{
 	font-size: 16px;
 	font-weight: 500;
 	color: #444;
-	cursor: pointer;
+	
 }
-.article-item .content h1:hover{
+.article-item .content h1:hover a{
 	color:#8AC78F;
 }
 .content .imgCon{
@@ -265,12 +265,12 @@
 	font-size: 13px;
 	color: rgb(120, 121, 120);
 }
-#imgStyle{
+.imgStyle{
 	width: 220px;
 	height: 150px;
 	overflow: hidden;
 }
-#imgStyle img{
+.imgStyle img{
 	max-width: 220px;
     max-height: 150px;
 }
