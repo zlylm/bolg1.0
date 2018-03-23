@@ -168,7 +168,7 @@
 	margin:30px auto;
 }
 .article-item{
-	width: 60%;
+	width: 50%;
 	margin: auto;
 	height: auto;
 	border:solid transparent 1px;
@@ -270,6 +270,7 @@
 	height: 150px;
 	overflow: hidden;
 }
+
 .imgStyle img{
 	max-width: 220px;
     max-height: 150px;
