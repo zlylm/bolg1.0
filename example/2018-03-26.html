@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>css3实现手机模型</title>
+		<style type="text/css">
+			/*机身轮廓部分*/
+			.iphone{
+				width: 423px;
+				height: 877px;
+				box-sizing: border-box;
+				background: #f8f8f8;
+				border:solid #d9dbdc 5px;
+				border-radius: 50px;
+				margin: auto;
+				box-shadow:inset 0 0 3px 0 rgba(0,0,0,0.2),0 0 0 1px #999,0 0 30px 0px rgba(0,0,0,0.7);
+				padding: 15px;
+				transform: scale(0.8);
+				position: relative;
+			}
+			.iphone-top{
+				position: relative;
+				padding: 5px 110px 40px;
+			}
+			.iphone-top .speaker{
+				display: block;
+				width: 70px;
+				height: 6px;
+				margin: 0 auto;
+				border-radius: 6px;
+				background: #292728;
+			}
+			.iphone-top .camera{
+				display: block;
+				margin: 0 auto;
+				height: 10px;
+				width: 10px;
+				border-radius: 50%;
+				margin-bottom: 13px;
+				background: #333;
+			}
+			.iphone-top .sensor{
+				display: block;
+				width: 15px;
+				height: 15px;
+				float: left;
+				background: #333;
+				border-radius: 50%;
+				margin-top:-5px;
+			}
+			.iphone .top-bar,.iphone .bottom-bar{
+				display: block;
+				width: 100%;
+				height: 15px;
+				border-left: solid 5px #bbb;
+				border-right: solid 5px #bbb;
+				position: absolute;
+				left: -5px;
+			}
+			.iphone .top-bar{
+				top: 65px;
+			}
+			.iphone .bottom-bar{
+				bottom: 65px;
+			}
+			/*屏幕部分*/
+			.iphone-screen{
+				background: #eee;
+				border: solid 1px #fff;
+				height: 677px;
+				width: 375px;
+				margin: 0 auto;
+				border:2px solid rgba(0,0,0,0.9);
+				border-radius: 3px;
+				overflow: hidden;
+			}
+			.iphone-screen img{
+				width: 100%;
+				height: 100%;
+			}
+			/*机身侧边按钮部分*/
+			.iphone .buttons .on-off,.iphone .buttons .up,.iphone .buttons .down,.iphone .buttons .sleep{
+				display: block;
+				background: #ccc;
+				position: absolute;
+				border-radius: 2px 0px 0px 2px;
+			}
+			.iphone .buttons .on-off{
+				height: 40px;
+				width: 3px;
+				top:100px;
+				left: -8px;
+			}
+			.iphone .buttons .up,.iphone .buttons .down,.iphone .buttons .sleep{
+				height: 60px;
+				width: 5px;
+				left: -10px;
+			}
+			.iphone .buttons .up{
+				top: 170px;
+			}
+			.iphone .buttons .down{
+				top: 250px;
+			}
+			.iphone .buttons .sleep{
+				left: auto;
+				right: -10px;
+				top: 170px;
+				border-radius: 0px 2px 2px 0;
+			}
+			/*底部圆键*/
+			.iphone-bottom{
+				padding: 10px 0 0;
+			}
+			.iphone-bottom span{
+				display: block;
+				margin: 0 auto;
+				width: 68px;
+				height: 68px;
+				background: #ccc;
+				border-radius: 50%;
+				background: -webkit-linear-gradient(315deg, #303233 0%, #b5b7b9 50%, #f0f2f2 69%, #303233 100%);
+				background: linear-gradient(135deg,#303233 0%,#b5b7b9 50%,#fof2f2 69%,#303233 100%);
+				position: relative;
+			}
+			.iphone-bottom span:after{
+				content:"";
+				display:block;
+				width: 60px;
+				height: 60px;
+				background: #fff;
+				border-radius: 50%;
+				position: absolute;
+				left: 4px;
+				top: 4px;
+			}
+		</style>
+	</head>
+	<body>
+		
+		<div class="iphone">
+			<!--手机顶部-->
+			<div class="iphone-top">
+				<span class="camera"></span>
+				<span class="sensor"></span>
+				<span class="speaker"></span>
+			</div>
+			<div class="top-bar"></div>
+			<!--屏幕部分-->
+			<div class="iphone-screen">
+				<img src="http://i7.download.fd.pchome.net/t_600x1024/g1/M00/0A/15/ooYBAFPtbgKIVgxMAAGBuohRZEcAAB2RQD5n9YAAYHS329.jpg" />
+			</div>
+			<!--按钮部分-->
+			<div class="buttons">
+				<span class="on-off"></span>
+				<span class="sleep"></span>
+				<span class="up"></span>
+				<span class="down"></span>
+			</div>
+			<div class="bottom-bar"></div>
+			<div class="iphone-bottom">
+				<span></span>
+			</div>
+		</div>
+	</body>
+</html>
