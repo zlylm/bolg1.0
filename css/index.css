@@ -257,10 +257,8 @@
 	box-sizing: border-box;
 }
 .imgCon p{
-	flex: 1;
 	padding: 5px 15px;
 	line-height: 20px;
-	text-indent: 15px;
 	box-sizing: border-box;
 	font-size: 13px;
 	color: rgb(120, 121, 120);
@@ -274,4 +272,44 @@
 .imgStyle img{
 	max-width: 220px;
     max-height: 150px;
+}
+@media screen and (min-width:721px){
+	/*内容容器*/
+	.imgCon p{
+		flex: 1;
+		text-indent: 15px;
+	}
+}
+/*移动端样式*/
+@media screen and (max-width: 720px){
+	/*名称*/
+	#userName{
+		position: absolute;
+		top: 300px;
+	}
+	/*导航*/
+	#nav{
+		margin:390px auto 0;
+	}
+	/*内容容器*/
+	.article-item .content{
+		padding: 20px 0 40px 30px;
+	}
+	/*每日一句*/
+	#everyDay{
+		margin-top:50px;
+	}
+	/*文章容器*/
+	.article-item{
+		width: 100%;
+	}
+	/*图片和描述的容器*/
+	.content .imgCon{
+		flex-wrap: wrap;
+	}
+	/*描述容器*/
+	.imgCon p{
+		padding: 5px 15px 0 0;
+	}
+	
 }
