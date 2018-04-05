@@ -266,12 +266,13 @@
 .imgStyle{
 	width: 220px;
 	height: 150px;
-	overflow: hidden;
+	/*overflow: hidden;*/
 }
 
 .imgStyle img{
 	max-width: 220px;
     max-height: 150px;
+    box-shadow: -2px 2px 5px #333333;
 }
 @media screen and (min-width:721px){
 	/*内容容器*/
